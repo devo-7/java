@@ -2,15 +2,15 @@ package java_projelerim;
 import java.util.Scanner;
 public class oklid_ebob {
 	 
-	 public static int ebob(int a, int b) {
-	        while (b != 0) {
-	            int temp = b;
+	 public static int ebob(int a,int b){
+	        while (b!=0) {
+	            int t=b;
 	            b=a%b;  
-	            a=temp;
+	            a=t;
 	        }
 	        return a;
 	    }
-	 public static void main(String[] args) {
+	 public static void main(String[] args){
 		 	int s1,s2,n;
 	        Scanner oku = new Scanner(System.in);
 	        System.out.print("1 sayiyi gir:");
