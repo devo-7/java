@@ -1,0 +1,59 @@
+package hafta_6;
+import java.util.Scanner;
+public class ders_1 {
+	
+	static int umida(int i){
+		int z;
+		z=i+1;
+		return z;
+	}
+	
+	static int mrb(int a,int b){
+		/*System.out.println("Gunaydin");
+		System.out.println("Bu gun matematik quize girecegim");
+		int c=a+b;
+		return c;*/
+		int c=a+umida(b);
+		return c;
+		
+	}
+	public static void main(String[] args) {
+		Scanner abdulaziz=new Scanner(System.in);
+		System.out.println("1 sayiyi gir:");
+		int a=abdulaziz.nextInt();
+		System.out.println("2 sayiyi gir:");
+		int b=abdulaziz.nextInt();
+		System.out.println("Sonuc:"+mrb(a,b));
+		
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+package hafta_6;
+import java.util.Scanner;
+public class dogum_yil {
+	
+	static int dg(int a){
+		int b=2026;
+		int c;
+		if (a<1970){
+			System.out.println("Yanlis hesap");
+			return -1;
+		}
+		else {
+			c=b-a;
+			return c;
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner abdulaziz=new Scanner(System.in);
+		System.out.println("Dogum yilini gir:");
+		int a=abdulaziz.nextInt();
+		if (dg(a)!=-1){
+			System.out.println("Yasiniz: "+dg(a));
+		}
+		System.out.println("Yasin:"+dg(a));
+	}
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------------

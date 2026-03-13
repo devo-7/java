@@ -1,0 +1,15 @@
+package hafta_6;
+
+public class fibonnaci {
+
+	public static void main(String[] args) {
+		int s1=0,s2=1,t;
+		for (int i=0;i<10;i++){
+			t=s2;
+			s2=s2+s1;
+			s1=t;
+			System.out.print(s2+" ");
+		}
+	}
+
+}
